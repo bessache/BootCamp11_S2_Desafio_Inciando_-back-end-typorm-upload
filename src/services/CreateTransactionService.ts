@@ -29,7 +29,7 @@ class CreateTransactionService {
     value,
     type,
     category,
-  }: request): Promise<Transaction> {
+  }: Request): Promise<Transaction> {
     const categoryRepository = getRepository(Category);
     const transactionRepository = getCustomRepository(TransactionsRepository);
 
